@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thy
+.org">
+<th:block th:insert="layoutHome :: header"></th:block>
+
+<body>
+    <div clas="container">
+        <th:block th:insert="layoutHome::navbar"></th:block>
+
+    
+    <!--p th:text="${tasks}"></p>-->
+<table class="table" >
+    <tr>
+        <th>ID</th>
+        <th>Plant Name</th>
+        <th>Quantity</th>
+    </tr>
+   
+<tr th:each="o : ${orders}" >
+<td th:text="${o.id}"></td>
+<td th:text="${o.plantName}"></td>
+<td th:text="${o.quantity}"></td>
+<td>
+
+        <a th:href="@{/update/{id}(id=${o.id})}" class="btn btn-success">Update</a>
+        <a th:href="@{/delete/{id}(id=${o.id})}"  class="btn btn-success">Delete</a>
+    
+    
+</td>
+        </tr>
+
+    
+</table>
+</div>
+
+</body>
+</html>

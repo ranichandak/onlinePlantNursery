@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:insert="layoutHome :: header"></th:block>
+
+<body>
+  <div clas="container-fluid scroller"> 
+    <div>
+    <th:block th:insert="layoutHome::navbar"></th:block>
+ </div>>
+
+
+
+
+<div class="card" style="width: 50rem;">
+  <h5 class="card-title" style="text-align: center;">Register</h5>
+</div>
+  <div class="card" style="width: 50rem;">
+    <div class="card-body">
+      
+      <form action="/updateorder" th:object="${order}" method="post" class="row g-3">
+        <input type="hidden" name="id" th:field="*{id}"/>
+        <div class="col-md-6">
+          <label for="plantName" class="form-label">Plant Name</label>
+          <input type="text" class="form-control" id="plantName" name="plantName" th:field="*{plantName}">
+        </div>
+        <div class="col-md-6">
+          <label for="quantity" class="form-label">Quantity</label>
+          <select id="quantity" class="form-select" name="quantity">
+            <option selected>Choose...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+
+          </select>
+        </div>
+       
+        
+        <div class="col-12">
+          <button type="submit" style="align-items: center;" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+</body>
+</html>

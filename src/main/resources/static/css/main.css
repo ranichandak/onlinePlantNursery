@@ -1,0 +1,117 @@
+#navUpper{
+    background: darkcyan;
+    text-decoration-color:azure;
+}
+
+#navbarNav{
+    background: rgb(39, 88, 119);
+}
+#mainNav{
+    background: rgb(157, 232, 218);
+}
+body{
+    background: rgb(197, 239, 239);
+
+}
+a.nav-link{
+    color: aliceblue!important;
+}
+.blink_me {
+    animation: blinker 2s linear infinite;
+    color: aliceblue !important;
+    margin-left: 150%;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+
+#subNavBar{
+    background: rgb(26, 52, 70); 
+}
+
+.banner{
+   
+background-image: url(/images/bg1.jpg);
+width: 100%;
+height:350px;
+background-repeat: no-repeat;
+background-size:cover;
+margin-top:10px;
+}
+
+
+div.layer {
+    margin: 30px;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  
+  div.layer p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+  }
+
+
+
+.scroller{
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.column{
+    height: 200px;
+    width:200px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#para{
+    text-align: center;
+    background-color: white;
+}
+.mid-row{
+    background: darkcyan;
+}
+
+#para-one {
+    animation: blinker 1s linear infinite;
+    color:black !important;
+text-align: center; margin-top:2%; }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+p#para-one{
+     background:yellowgreen;
+    
+}
+footer{
+    background: rgb(26, 52, 70); 
+    height: 200px;
+}
+.card{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    align-items:center;
+    background: rgb(26, 52, 70); 
+    color:white;
+
+}
+.loginTemp{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    align-items:center;
+    background: rgb(26, 52, 70); 
+    color:white;
+    height: 300px!important;
+    transition: width 2s, height 4s;
+}

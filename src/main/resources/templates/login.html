@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:insert="layout :: header"></th:block>
+<body>
+  <div class="container-fluid"> 
+    <div>
+    <th:block th:insert="layout::navbar"></th:block>
+ </div>
+  </div>
+<div clas="container-fluid">
+    <div class="card">
+        <h5 class="card-title" style="text-align: center;">Login</h5>
+      </div>
+      
+<div class="row loginTemp">
+    <div class="col-md-8">
+        <form th:action="@{/userLogin} " th:object="${user}" method="post">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="username" th:field="*{email}">
+                  </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" th:field="*{password}">
+                  </div>
+           </br>
+            <div class="form-group row" style="margin-left: 60px;">
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+          </form>
+         </div>
+    <div class="col-md-4">
+<img src="/images/brand.jpg" alt="Logo" width="200px" height="200px" align-item="center"  class="d-inline-block align-text-top" style="opacity: 0.6;">
+        </div>
+    </div>
+</body>
+</html>
+
